@@ -12,7 +12,7 @@ The Integration with Travis.yml looks roughly as follows:
 
 **Build Phase I** - Run tests on images
 
-**Build Phase II** - Push images to Docker Hub with a prod tags (since this is the production pipeline)
+**Build Phase II** - Push images to Docker Hub with prod tags (since this is the production pipeline)
 
 **Build Phase III** - Create a Dockerrun.aws.json in root directory that pulls images with prod tags.
 
@@ -24,7 +24,7 @@ The Integration with Travis.yml looks roughly as follows:
 
 **Build Phase I** - Run tests on images
 
-**Build Phase II** - Push images to Docker Hub with a dev tags (since this is the production pipeline)
+**Build Phase II** - Push images to Docker Hub with dev tags (since this is the production pipeline)
 
 **Build Phase III** - Create a Dockerrun.aws.json in root directory that pulls images with dev tags.
 
