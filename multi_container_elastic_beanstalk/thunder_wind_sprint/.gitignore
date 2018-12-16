@@ -1,0 +1,5 @@
+tmp
+
+### BE SURE TO UNCOMMENT THESE TWO LINES if you add RSA keys or EC2 IPS to .access files.
+# .access/keys
+# .access/env.sh

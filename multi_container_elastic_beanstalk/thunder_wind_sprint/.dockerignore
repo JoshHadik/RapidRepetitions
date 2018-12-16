@@ -1,0 +1,9 @@
+.git
+.access
+.build
+
+view/node_modules
+view/build
+view/README.md
+view/yarn.lock
+view/package-lock.json

@@ -1,0 +1,18 @@
+<h2>
+  New Element
+</h2>
+
+<%= form_for @changeset, element_path(@conn, :create), fn f -> %>
+  <div class="form-group">
+    <%= text_input f, :name, placeholder: "Name of element" %>
+    <%= error_tag f, :name %>
+
+    <%= text_input f, :symbol, placeholder: "Periodic symbol of element" %>
+    <%= error_tag f, :symbol %>
+
+    <%= text_input f, :num_of_electrons, placeholder: "Number of electrons of element" %>
+    <%= error_tag f, :num_of_electrons %>
+  </div>
+
+  <%= submit "Create Element", class: "btn btn-submit" %>
+<% end %>

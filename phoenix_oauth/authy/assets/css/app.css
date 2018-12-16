@@ -1,0 +1,19 @@
+/* This file is for your main application css. */
+
+.site-header {
+  margin-bottom: 20px;
+}
+
+.oauth-link {
+  width: 250px;
+  padding: 0px;
+  margin-left: 15px;
+}
+
+.oauth-link:hover {
+  background-color: inherit;
+}
+
+.oauth-link img {
+  width: 100%;
+}

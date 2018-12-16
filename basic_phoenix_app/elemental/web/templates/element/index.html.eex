@@ -1,0 +1,23 @@
+<h2>
+  Elements
+</h2>
+
+<ul class="collection">
+  <%= for element <- @elements do %>
+    <li class="collection-item">
+      <%= show_link "#{element.name} (#{element.symbol})", @conn, element %>
+
+      <div class="right">
+        <%= edit_link @conn, element %> |
+        <%= delete_link @conn, element %>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+
+<div class="fixed-action-btn">
+  <%= link to: element_path(@conn, :new), class: "btn-large btn-floating waves-effect waves-light jade-green" do %>
+    <i class="material-icons">add</i>
+  <% end %>
+</div>

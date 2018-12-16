@@ -1,0 +1,30 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    ports:
+      - 2345
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  core:
+    build:
+      context: "alpha_thunder_nova-core"
+      args:
+        UID: "${UID:-501}"
+    volumes:
+      - ./alpha_thunder_nova-core:/usr/src/alpha_thunder_nova
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    user: rails
+  web:
+    build:
+      context: "alpha_thunder_nova-web"
+      args:
+        UID: "${UID:-501}"
+    volumes:
+      - ./alpha_thunder_nova-web:/usr/src/alpha_thunder_nova
+    ports:
+      - "3000:3000"
+    user: nuxt

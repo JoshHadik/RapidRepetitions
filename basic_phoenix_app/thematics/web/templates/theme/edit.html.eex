@@ -1,0 +1,5 @@
+<%= heading(1, "Edit #{@theme.name}") %>
+
+<%= render Thematics.ThemeView, "_form.html",
+    changeset: @changeset, path: theme_path(@conn, :update, @theme), submit_text: "Update Theme"
+%>

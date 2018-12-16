@@ -1,0 +1,26 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "view",
+      "image": "${docker_id}/${app_name}-view:${env_tag}.latest",
+      "hostname": "view",
+      "essential": false,
+      "memory": 128
+    },
+    {
+      "name": "proxy",
+      "image": "${docker_id}/${app_name}-proxy:${env_tag}.latest",
+      "hostname": "view",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": ["view"],
+      "memory": 128
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+/* This file is for your main application css. */
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--text-size);
+}
+
+body,
+input,
+.form-group,
+.collection .collection-item {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.collection {
+  border-color: var(--text-color);
+}
+
+.collection .collection-item {
+  border-color: var(--text-color);
+}
+
+
+.h1-like {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.primary-color {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.color-swatch {
+  display: inline-block;
+  background-color: var(--color);
+  border: 0.5px solid var(--text-color);
+}
+
+.color-swatch-small {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.color-swatch-large {
+  margin-right: 5px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.theme--swatch-container {
+  font-size: 2em;
+  padding: 0;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.theme--swatch-container p {
+  margin: 0;
+}
+
+.theme--swatch-container > * {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: var(--text-size-large)
+}
+
+a.current {
+  color: gray;
+}
+
+.help-block {
+  color: red;
+}

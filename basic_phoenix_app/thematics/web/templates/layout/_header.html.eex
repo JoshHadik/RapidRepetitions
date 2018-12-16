@@ -1,0 +1,9 @@
+<header>
+  <nav class="primary-color">
+    <div class="nav-wrapper container">
+      <a class="brand-logo" href="/">
+        Thematics
+      </a>
+    </div>
+  </nav>
+</header>

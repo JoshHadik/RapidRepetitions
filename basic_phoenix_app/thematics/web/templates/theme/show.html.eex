@@ -1,0 +1,35 @@
+<%= heading(1, @theme.name) %>
+
+<div class="theme--swatch-container">
+  <%= color_swatch(:large, @theme.primary_color) %>
+  <p class="color-name">
+    <%= @theme.primary_color %>
+  </p>
+</div>
+
+<div class="theme--swatch-container">
+  <%= color_swatch(:large, @theme.background_color) %>
+  <p class="color-name">
+    <%= @theme.background_color %>
+  </p>
+</div>
+
+<div class="theme--swatch-container">
+  <%= color_swatch(:large, @theme.text_color) %>
+  <p class="color-name">
+    <%= @theme.text_color %>
+  </p>
+</div>
+
+
+<ul class="collection">
+  <li class="collection-item">
+    <%= set_theme_link(@conn, @theme) %>
+  </li>
+  <li class="collection-item">
+    <%= edit_theme_link(@conn, @theme) %>
+  </li>
+  <li class="collection-item">
+    <%= delete_theme_link(@conn, @theme) %>
+  </li>
+</ul>

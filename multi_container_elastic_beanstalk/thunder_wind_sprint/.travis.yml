@@ -1,0 +1,36 @@
+sudo: required
+services:
+  - docker
+env:
+  global:
+    - SHA=$(git rev-parse HEAD)
+    - APP_NAME=thunder_wind_sprint
+    - DOCKER_ID="$DOCKER_ID"
+before_install: docker build -t view:ci -f view/Dockerfile.dev view
+script: docker run view:ci npm run test -- --coverage
+before_deploy:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - bash .build/build_and_push_images.sh
+  - bash .build/copy_dockerrun_to_root.sh
+deployments:
+  elastic_beanstalk: &elastic_beanstalk_deploy
+    skip_cleanup: true
+    provider: elasticbeanstalk
+    app: "ThunderWindSprint"
+    region: "us-east-2"
+    # Replace region and user_id in bucket_name if necessary.
+    bucket_name: "elasticbeanstalk-us-east-2-012345678910"
+    bucket_path: "ThunderWindSprint"
+    access_key_id:
+      secure: $EB_ACCESS_KEY
+    secret_access_key:
+      secure: $EB_SECRET_KEY
+deploy:
+  - <<: *elastic_beanstalk_deploy
+    env: "ThunderWindSprint-ProdEnv"
+    on:
+      branch: master
+  - <<: *elastic_beanstalk_deploy
+    env: "ThunderWindSprint-DevEnv"
+    on:
+      branch: development

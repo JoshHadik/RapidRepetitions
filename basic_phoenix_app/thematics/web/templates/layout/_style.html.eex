@@ -1,0 +1,8 @@
+<style>
+:root {
+  --primary-color: <%= @theme.primary_color %>;
+  --background-color: <%= @theme.background_color %>;
+  --text-color: <%= @theme.text_color %>;
+  --text-size: 15px;
+}
+</style>

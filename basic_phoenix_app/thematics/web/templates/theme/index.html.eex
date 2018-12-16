@@ -1,0 +1,16 @@
+<%= heading(1, "Themes") %>
+
+<%= query_theme_link("Newest to Oldest", @conn, :by_date) %> |
+<%= query_theme_link("By Name", @conn, :by_name) %> |
+<%= query_theme_link("By Color", @conn, :by_color) %> |
+<%= query_theme_link("Recently Updated", @conn, :by_updated_at) %>
+
+<ul class="collection">
+  <%= for theme <- @themes do %>
+    <li class="collection-item">
+      <%= render Thematics.ThemeView, "_theme.html", theme: theme, conn: @conn %>
+    </li>
+  <% end %>
+</ul>
+
+<%= render Thematics.SharedView, "_action_button.html", path: theme_path(@conn, :new) %>

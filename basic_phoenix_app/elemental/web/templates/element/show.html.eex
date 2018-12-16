@@ -1,0 +1,16 @@
+<h2>
+  <%= @element.name %> (<%= @element.symbol %>)
+</h2>
+
+<h5>
+  Number of Electrons: <%= @element.num_of_electrons %>
+</h5>
+
+<ul class="collection">
+  <li class="collection-item">
+    <%= edit_link @conn, @element %>
+  </li>
+  <li class="collection-item">
+    <%= delete_link @conn, @element %>
+  </li>
+</ul>

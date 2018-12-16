@@ -1,0 +1,5 @@
+<div class="fixed-action-btn">
+  <%= link to: @path, class: "btn-floating btn-large waves-effect waves-light primary-color" do %>
+    <i class="material-icons">add</i>
+  <% end %>
+</div>

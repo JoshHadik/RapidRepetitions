@@ -1,0 +1,12 @@
+<div class="theme">
+  <%= color_swatch(:small, @theme.primary_color) %>
+  <%= color_swatch(:small, @theme.background_color) %>
+  <%= color_swatch(:small, @theme.text_color) %>
+  <%= show_theme_link(@conn, @theme) %>
+
+  <div class="right">
+    <%= set_theme_link(@conn, @theme) %> |
+    <%= edit_theme_link(@conn, @theme) %> |
+    <%= delete_theme_link(@conn, @theme) %>
+  </div>
+</div>

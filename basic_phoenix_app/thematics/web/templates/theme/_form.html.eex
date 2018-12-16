@@ -1,0 +1,17 @@
+<%= form_for @changeset, @path, fn f -> %>
+  <div class="form-group">
+    <%= text_input f, :name, placeholder: "Enter name of theme" %>
+    <%= error_tag f, :name %>
+
+    <%= text_input f, :primary_color, placeholder: "Enter primary color of theme in hex format (ex: #112233)" %>
+    <%= error_tag f, :primary_color %>
+
+    <%= text_input f, :background_color, placeholder: "Enter background color of theme in hex format (ex: #112233)" %>
+    <%= error_tag f, :background_color %>
+
+    <%= text_input f, :text_color, placeholder: "Enter text color of theme in hex format (ex: #112233)" %>
+    <%= error_tag f, :text_color %>
+  </div>
+
+  <%= submit @submit_text, class: "btn btn-submit primary-color" %>
+<% end %>
