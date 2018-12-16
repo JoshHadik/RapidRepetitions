@@ -9,17 +9,25 @@ The Integration with Travis.yml looks roughly as follows:
 ### Pipeline 1 - Production
 
 **Trigger** - Changes made on Master Branch (via push or pull request)
+
 **Build Phase I** - Run tests on images
+
 **Build Phase II** - Push images to Docker Hub with a prod tags (since this is the production pipeline)
+
 **Build Phase III** - Create a Dockerrun.aws.json in root directory that pulls images with prod tags.
+
 **Deploy** - Deploy code to the production environment running on Elastic Beanstalk (which I named ThunderWindSprint-ProdEnv).
 
 ### Pipeline 2 - Development
 
 **Trigger** - Changes made on Development Branch (via push or pull request)
+
 **Build Phase I** - Run tests on images
+
 **Build Phase II** - Push images to Docker Hub with a dev tags (since this is the production pipeline)
+
 **Build Phase III** - Create a Dockerrun.aws.json in root directory that pulls images with dev tags.
+
 **Deploy** - Deploy code to the staging environment running on Elastic Beanstalk (which I named ThunderWindSprint-DevEnv)
 
 ### Get the code working
