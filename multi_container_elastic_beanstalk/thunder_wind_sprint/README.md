@@ -32,7 +32,7 @@ The Integration with Travis.yml looks roughly as follows:
 
 ### Get the code working
 
-In order for this code to work, you must have done all of the expected setup on Github, Travis CI, and AWS, including:
+In order for this code to work, you must have done all of the expected setup on Github, Travis CI, and AWS, including (but not limited to):
 
 1. Connect local repo with Github Repos
 2. Connect Github Repo with Travis CI
