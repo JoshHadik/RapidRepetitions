@@ -12,8 +12,8 @@ So far, I have completed one weeks worth of Rapid Repetitions for each of the fo
 
 1. Creating a basic REST application with CRUD actions for a single resource in Phoenix.
 2. Integrating OAuth sign in with Ueberauth in Phoenix.
-3. Setting up a basic local Docker application environment.
-4. Setting up a multi-service local Docker application with a Rails API and a Nuxt web interface.
+3. Setting up a single-service Docker application locally.
+4. Setting up a multi-service local Docker application with a Rails API and a Nuxt web interface (and connecting the two together).
 5. Deploying a single container React application to Elastic Beanstalk.
 6. Deploying a multi container application to Elastic Beanstalk.
 
