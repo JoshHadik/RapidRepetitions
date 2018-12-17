@@ -18,7 +18,7 @@ build_image() {
                -f $context/Dockerfile $context
 }
 
-# Push image to docker hub
+# Pushes image to docker hub
 push_image() {
   local name=$1 environment=$2
 
@@ -33,7 +33,7 @@ push_image() {
   fi
 }
 
-# build and push image at once
+# Build and push image to docker hub at once
 docker_helper::build_and_push_image() {
   local name=$1 environment=$2 context=$3
 
