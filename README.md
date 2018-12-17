@@ -10,7 +10,7 @@ This has helped me learn new technologies at a much faster past than I used to b
 
 So far, I have completed one weeks worth of Rapid Repetitions for each of the following tasks:
 
-1. Creating a basic REST application with CRUD actions for a single resource in Phoenix.
+1. Creating a basic REST application with CRUD actions for a single resource type in Phoenix.
 2. Integrating OAuth sign in with Ueberauth in Phoenix.
 3. Setting up a single-service Docker application locally.
 4. Setting up a multi-service local Docker application with a Rails API and a Nuxt web interface (and connecting the two together).
