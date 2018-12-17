@@ -4,9 +4,9 @@ SHA=$SHA
 IMAGE_PATH=$DOCKER_ID/$APP_NAME
 
 # Build image using three separate tags
-# Example Tag 1 => dockerid/deep_jungle_cavern-web:dev.b78a713{...}
-# Example Tag 2 => dockerid/deep_jungle_cavern-web:dev.latest
-# Example Tag 3 => dockerid/deep_jungle_cavern-web:latest
+# Example Tag 1 => dockerid/thunder_wind_sprint-web:dev.b78a713{...}
+# Example Tag 2 => dockerid/thunder_wind_sprint-web:dev.latest
+# Example Tag 3 => dockerid/thunder_wind_sprint-web:latest
 build_image() {
   local name=$1 environment=$2 context=$3
 
