@@ -20,6 +20,6 @@ So far, I have completed one weeks worth of Rapid Repetitions for each of the fo
 
 ## What is the purpose of this Repository?
 
-This repository is basically a place for me to showcase some of the best code I've written during my Rapid Repetitions.
+This repository is basically a place for me to store some of the best code I've written during my Rapid Repetitions.
 
 It's mainly for personal use since I find myself frequently using certain R2 (rapid repetition) projects for reference when completing certain tasks, and I'd like to make sure I always have access to them even if I lose this computer.
