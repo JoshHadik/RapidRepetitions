@@ -4,7 +4,7 @@
 
 On November 5, 2018, I decided to add a new habit into my daily routine. Something I have since come to call "Rapid Repetitions."
 
-The idea was simple. I come up with one repetitive programming task (like integrating Travis CI, or building a basic CRUD app), and I repeat the entire task every morning for six days a week, trying to complete as much from memory as possible.
+The idea was simple. Come up with one repetitive programming task (like integrating Travis CI, or building a basic CRUD app), and repeat that entire task every morning for an entire week (with one off day), trying to complete as much from memory as possible.
 
 This has helped me learn new technologies at a much faster past than I used to by helping me memorize the general workflow required to set up the technology, as well as introducing me to some of the most common errors early on and forcing me to learn how to fix them and avoid them in the future.
 
