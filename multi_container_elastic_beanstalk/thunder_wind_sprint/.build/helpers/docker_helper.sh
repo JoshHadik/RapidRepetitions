@@ -3,7 +3,7 @@ source .build/helpers/travis_helper.sh
 SHA=$SHA
 IMAGE_PATH=$DOCKER_ID/$APP_NAME
 
-# Builds image with three separate tags
+# Build image using three separate tags
 # Example Tag 1 => dockerid/deep_jungle_cavern-web:dev.b78a713{...}
 # Example Tag 2 => dockerid/deep_jungle_cavern-web:dev.latest
 # Example Tag 3 => dockerid/deep_jungle_cavern-web:latest
@@ -18,7 +18,7 @@ build_image() {
                -f $context/Dockerfile $context
 }
 
-# Pushes image to docker hub
+# Push image to docker hub
 push_image() {
   local name=$1 environment=$2
 
