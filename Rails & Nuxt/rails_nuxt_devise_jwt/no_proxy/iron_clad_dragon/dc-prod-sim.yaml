@@ -1,0 +1,25 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    volumes:
+      - .tmp/db:/var/lib/postgresql/data
+    ports:
+      - '5432'
+  api:
+    build: api
+    environment:
+      - JWT_SECRET=29bb11f164fcdcd044a6d5aba98852bca961bd0202fad0e89319a8158a282b72a4129fa0578c1f31322874da5e4e03d792a1c963fc213cf5756305291c9a6cb5
+    volumes:
+      - ./api:/app
+    depends_on:
+      - db
+    ports:
+      - '4000:4000'
+  view:
+    build: view
+    volumes:
+      - /app/node_modules
+      - ./view:/app
+    ports:
+      - '3000:3000'

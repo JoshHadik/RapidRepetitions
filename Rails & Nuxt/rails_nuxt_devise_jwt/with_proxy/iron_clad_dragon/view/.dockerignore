@@ -1,0 +1,16 @@
+# Docker
+Dockerfile*
+.dockerignore
+
+# Git
+.gitignore
+
+# Node
+node_modules
+
+# Nuxt
+.nuxt
+# dist
+
+# App
+README.md

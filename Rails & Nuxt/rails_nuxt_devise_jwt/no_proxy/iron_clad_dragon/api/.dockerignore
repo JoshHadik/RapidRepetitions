@@ -1,0 +1,9 @@
+# Docker
+Dockerfile*
+.dockerignore
+
+# Git
+.gitignore
+
+# App
+README.md

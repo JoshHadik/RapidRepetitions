@@ -1,0 +1,20 @@
+configurations:
+  default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  docker: &docker
+    <<: *default
+    host: db
+    username: postgres
+development:
+  <<: *docker
+  database: api_development
+test:
+  <<: *docker
+  database: api_test
+# production:
+#   <<: *default
+#   database: api_production
+#   username: api
+#   password: <%= ENV['API_DATABASE_PASSWORD'] %>
