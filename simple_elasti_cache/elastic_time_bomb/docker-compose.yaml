@@ -1,0 +1,16 @@
+version: '3'
+services:
+  cache:
+    image: 'redis:latest'
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - '5000:5000'
+    environment:
+      - REDIS_HOST=cache
+      - REDIS_PORT=6379

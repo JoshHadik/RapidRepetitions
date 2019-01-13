@@ -1,0 +1,16 @@
+# Docker
+Dockerfile*
+.dockerignore
+docker-compose.yaml
+dc-prod-sim.yaml
+
+# Git
+.git*
+
+# Node
+node_modules
+yarn.lock
+
+# App
+README.md
+.aws

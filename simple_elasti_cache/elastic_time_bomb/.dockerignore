@@ -1,0 +1,15 @@
+# Docker
+Dockerfile*
+.dockerignore
+docker-compose.yaml
+
+# Git
+.git*
+
+# Node
+node_modules
+package-lock.json
+
+# AWS
+.access/
+.build/
