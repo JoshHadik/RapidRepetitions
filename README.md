@@ -16,6 +16,12 @@ So far, I have completed one weeks worth of Rapid Reps for each of the following
 4. Setting up a multi-service local Docker application with a Rails API and a Nuxt web interface (and connecting the two together).
 5. Deploying a single container React application to Elastic Beanstalk.
 6. Deploying a multi container application to Elastic Beanstalk.
+7. Setting up an Elastic Beanstalk app with RDS.
+8. Setting up an Elastic Beanstalk app with ElastiCache.
+9. Setting up HTTPS on Elastic Beanstalk.
+10. Setting up authentication with JWT on a Rails / Nuxt app.
+11. Deploying a Rails app to Elastic Beanstalk
+12. Deploying a Rails / Nuxt / Nginx app to Elastic Beanstalk.
 
 
 ## What is the purpose of this Repository?
